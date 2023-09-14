@@ -23,7 +23,10 @@ pipeline:
                     source:
                       type: Inline
                       spec:
-                        script: "ls -la "
+                        script: |-
+                          pwd
+                          whoami
+                          ls -la 
                     environmentVariables: []
                     outputVariables: []
                   timeout: 10m
