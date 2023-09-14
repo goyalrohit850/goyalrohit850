@@ -30,3 +30,5 @@ pipeline:
         tags: {}
         when:
           pipelineStatus: All
+        delegateSelectors:
+          - test
